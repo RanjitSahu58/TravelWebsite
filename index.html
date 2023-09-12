@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!------------------------------------->
+    <!-- FontAwesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!------------------------------------->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" id="logo" href="index.html"
+          ><h1><span>V</span>enture<span>S</span>phere</h1></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book">Book</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#packages">Packages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Section Start -->
+
+    <div class="home">
+      <div class="content">
+        <h5>Welcome To World</h5>
+        <h1>Visit <span class="changeContent"></span></h1>
+        <p>
+          The world is a book, and those who do not travel read only one page.
+        </p>
+        <a href="#book">Book Place</a>
+      </div>
+    </div>
+    <!-- Home Section End -->
+
+    <!-- Section Book Start -->
+    <section class="book" id="book">
+      <div class="container">
+        <div class="main-text">
+          <h1><span>B</span>ook</h1>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="Other/Book-again.avif" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <form action="#">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Where To"
+                required
+              />
+              <br />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="How Many"
+                required
+              />
+              <br />
+              <input
+                type="date"
+                class="form-control"
+                placeholder="Arrivals"
+                required
+              />
+              <br />
+              <input
+                type="date"
+                class="form-control"
+                placeholder="Leaving"
+                required
+              />
+              <br />
+              <textarea
+                class="form-control"
+                rows="5"
+                name="text"
+                placeholder="Enter Your Name And Details"
+              ></textarea>
+              <input type="submit" value="Book Now" class="submit" required />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Book End -->
+
+    <!-- Section Packages Start -->
+
+    <section class="packages" id="packages">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>P</span>ackages</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img
+                src="Packages/Aus.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h3>Perth</h3>
+                <p>
+                  Perth's combination of natural beauty, outdoor activities, and cultural experiences make it an appealing destination for travelers seeking relaxation and adventure.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>&#8377;39,999</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img
+                src="Packages/Dubai.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h3>Dubai</h3>
+                <p>
+                  Dubai is a dazzling city in the United Arab Emirates known for its futuristic architecture, luxury shopping, and vibrant cultural scene.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>&#8377;49,999</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img src="Packages/maldives.jpg"" />
+              <div class="card-body">
+                <h3>Male</h3>
+                <p>
+                  Malé offers a glimpse into Maldivian culture, urban life, and serves as a convenient hub to explore the idyllic beauty of the Maldives' islands and waters. 
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>&#8377;54,999</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-5">
+            <div class="card">
+              <img
+                src="Packages/pexels-pierre-blaché-3105066.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h3>Bali</h3>
+                <p>
+                  Bali's natural beauty, cultural experiences, and welcoming locals make it a popular destination for travelers seeking relaxation, adventure, and cultural immersion. 
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>&#8377;39,999</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-5">
+            <div class="card">
+              <img
+                src="Packages/unknown-2.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h3>Mexico City</h3>
+                <p>
+                  Mexico City's historical significance, cultural diversity, and  makes it a captivating destination for travelers seeking a mix of tradition and modernity. 
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>&#8377;49,999</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-5">
+            <div class="card">
+              <img
+                src="Packages/Unknown.jpg"
+                alt=""
+              />
+              <div class="card-body">
+                <h3>Singapore</h3>
+                <p>
+                  Singapore's combination of modernity, culture, and cleanliness has contributed to its popularity as a top global travel destination.
+                </p>
+                <div class="star">
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star checked"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h6>Price: <strong>&#8377;54,999</strong></h6>
+                <a href="#book">Book Now</a>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Packages End -->
+
+    <!-- Section Services Strat -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>S</span>ervices</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-hotel"></i>
+              <div class="card-body">
+                <h3>Affordable Hotel</h3>
+                <p>
+                  Discover comfort without breaking the bank at our affordable hotel, where value meets relaxation.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-utensils"></i>
+              <div class="card-body">
+                <h3>Food & Drinks</h3>
+                <p>
+                  Savor a delightful culinary journey with our diverse menu of delectable dishes and refreshing drinks.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-bullhorn"></i>
+              <div class="card-body">
+                <h3>Safety Guide</h3>
+                <p>
+                  Your safety is our priority — explore with confidence as we provide comprehensive safety guidelines for your worry-free experience.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-globe-asia"></i>
+              <div class="card-body">
+                <h3>Around The World</h3>
+                <p>
+                  Embark on a global adventure and explore the world's wonders, one destination at a time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-plane"></i>
+              <div class="card-body">
+                <h3>Fastest Travel</h3>
+                <p>
+                  Experience the thrill of ultra-fast travel, reaching your dream destinations in record time.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <i class="fas fa-hiking"></i>
+              <div class="card-body">
+                <h3>Adventures</h3>
+                <p>
+                   Adventure and create unforgettable memories as you venture into the unknown.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Services End -->
+
+    <!-- Section Gallery Start -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>G</span>allery</h1>
+        </div>
+
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img
+                src="Gallery/g-1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img
+                src="Gallery/g2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img
+                src="Gallery/g-3.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px">
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img
+                src="Gallery/g-4.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img
+                src="Gallery/g-5-aga.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-md-4 py-3 py-md-0">
+            <div class="card">
+              <img
+                src="Gallery/g-6.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Gallery End -->
+
+    <!-- Section About Start -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="main-txt">
+          <h1><span>A</span>bout <span>Us</span></h1>
+        </div>
+        <div class="row" style="margin-top: 50px">
+          <div class="col-md-6 py-3 py-md-0">
+            <div class="card">
+              <img src="Other/aboutImg.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="col-md-6 py-3 py-md-0">
+            <h2>How Travel Agency Work</h2>
+            <p>
+              Travel agencies facilitate the planning, booking, and organization
+              of travel arrangements for individuals or groups. Overall, travel
+              agencies streamline the travel planning process, provide
+              expertise, and ensure a more enjoyable and stress-free travel
+              experience for their clients. However, the rise of online booking
+              platforms has changed the dynamics of the industry, allowing
+              travelers to research and book trips directly.
+            </p>
+            <button id="about-btn">Read More...</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section About End -->
+
+    <!-- Footer Section Start -->
+
+    <footer id="footer">
+      <h1><span>V</span>enture<span>S</span>phere</h1>
+      <div class="social-links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-pinterest"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+      <div class="credit">
+        <p>Powered By <a href="#"> <em>Ranjit Sahu</em> </a></p>
+      </div>
+      
+    </footer>
+
+    <!-- Footer Section End -->
+
+    <script src="script.js"></script>
+    <!-- Bootstrap JS  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ---------------------------  -->
+  </body>
+</html>

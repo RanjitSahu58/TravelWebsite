@@ -1,0 +1,503 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+/* Navbar Start*/
+#nabvar {
+  background-color: #f9f9f9;
+}
+
+#logo h1{
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+  text-shadow: 0px 1px 1px black;
+  margin-bottom: 5px;
+}
+#logo span {
+  color: crimson;
+}
+
+.navbar-toggler span {
+  color: rgb(127, 127, 127);
+}
+
+.navbar-nav {
+  margin-left: 20px;
+}
+
+.nav-item .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  transition: 0.5s ease;
+}
+
+.nav-item .nav-link:hover {
+  background-color: crimson;
+  color: white;
+}
+
+#navbar form button {
+  background-color: crimson;
+  color: white;
+  font-weight: 600;
+  border-radius: none;
+  border: none;
+  transition: .4s ease all;
+}
+#navbar form button:hover{
+  background-color: transparent;
+  color:black;
+  border: 2px solid crimson;
+}
+
+/* Navbar End */
+
+/* Home Section Start */
+.home {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0, 0, 92, 0.3), rgba(0, 0, 113, 0.2));
+  background: url(AllCountry/Maldives-again-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* animation:changeimg 50s infinite ease-out; */
+
+}
+/* 
+ @keyframes changeimg {
+  0% {
+    background: url(AllCountry/India-again.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+  10% {
+    background: url(AllCountry/spain-again.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  20% {
+    background: url(AllCountry/France-again.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  30% {
+    background: url(AllCountry/Italy-again.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  40% {
+    background: url(AllCountry/Mexico-again.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background: url(AllCountry/Maldives-again-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  60% {
+    background: url(AllCountry/thailand-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  70% {
+    background: url(AllCountry/Bhutan-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  80% {
+    background: url(AllCountry/UAE-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  90% {
+    background: url(AllCountry/German-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background: url(AllCountry/Russia-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  } 
+ }  */
+
+.home .content {
+  text-align: center;
+  padding-top: 200px;
+}
+.home .content h5 {
+  color: white;
+  font-size: 48px;
+  font-weight: 600;
+  text-shadow: 0 1px 1px black;
+}
+.home .content h1 {
+  color: white;
+  font-size: 90px;
+  font-weight: 600;
+  text-shadow: 0 1px 1px black;
+  margin-top: 5px;
+}
+.changeContent::after {
+  content: "";
+  color: crimson;
+  text-shadow: 0 1px 1px rgb(255, 0, 0);
+  animation: changetext 20s infinite linear;
+}
+
+@keyframes changetext {
+  0% {
+    content: "India";
+  }
+  10% {
+    content: "Spain";
+  }
+  20% {
+    content: "France";
+  }
+  30% {
+    content: "Italy";
+  }
+  40% {
+    content: "Mexico";
+  }
+  50% {
+    content: "Maldives";
+  }
+  60% {
+    content: "Thailand";
+  }
+  70% {
+    content: "Bhutan";
+  }
+  80% {
+    content: "UAE";
+  }
+  90% {
+    content: "German";
+  }
+  100% {
+    content: "Russia";
+  }
+}
+.home .content p {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 0 2px 2px black;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+.home .content a {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.home .content a:hover {
+  background-color: crimson;
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .home {
+    background-position: 50%;
+  }
+}
+@media (max-width: 450px) {
+  .home .content h5 {
+    font-size: 25px;
+  }
+  .home .content h1 {
+    font-size: 38px;
+  }
+  .home .content p {
+    font-size: 13px;
+  }
+}
+/* Home Section End */
+
+/* Section Book Start */
+.book {
+  background-color: #f9f9f9;
+  padding-top: 20px;
+  
+}
+.main-text h1 {
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+}
+.main-text h1 span {
+  color: crimson;
+}
+.book .card {
+  border-radius: 10px;
+  box-shadow: 0 5px 5px -6px black;
+  
+}
+.book .row {
+  margin-top: 30px;
+}
+.book .row .card img{
+  /* object-fit: cover; */
+  border-radius: 10px;
+}
+
+.book form input {
+  padding: 10px;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px -6px black;
+}
+.book form textarea {
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px black;
+  height: 200px;
+}
+
+.book form .submit {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: crimson;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  transition: 0.5s ease;
+}
+.book .submit:hover {
+  color: crimson;
+  background-color: white;
+  border: 1.7px solid crimson;
+}
+
+@media (max-width:765px) {
+  .book {
+    padding: 0;
+  }
+  .main-text h1 {
+    margin-top: 20px;
+  }
+}
+/* Section Book End */
+
+/* Section Packages Start */
+.main-txt h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-overflow: 0px 1px 1px black;
+  letter-spacing: 1.7px;
+}
+.main-txt h1 span {
+  color: crimson;
+}
+.packages .card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.packages .card img {
+  border-radius: 5px;
+  height: 250px;
+  margin-top: 10px;
+}
+.packages .card .card-body {
+  background: transparent;
+}
+.packages .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+.packages .card .card-body p {
+  font-size: 14px;
+  color: rgb(41, 41, 41);
+}
+.checked {
+  color: #ffa500;
+}
+.star i {
+  font-size: 15px;
+}
+.packages .card .card-body h6 {
+  font-size: 20px;
+}
+.packages .card .card-body a {
+  padding: 10px;
+  text-decoration: none;
+  background-color: crimson;
+  color: white;
+  font-weight: 600;
+  border-radius: 5px;
+}
+.packages .card .card-body a:hover {
+  color: crimson;
+  background-color: transparent;
+  border: 1.6px solid crimson;
+}
+/* Section Packages End */
+
+/* Section Services Start */
+.services {
+  background-color: #f9f9f9;
+  margin-top: 50px;
+}
+.services .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: none;
+  cursor: pointer;
+}
+.services .card i {
+  font-size: 80px;
+  text-align: center;
+  color: crimson;
+  margin-top: 20px;
+}
+.services .card .card-body h3 {
+  font-weight: 600;
+}
+
+.services .card .card-body p{
+  font-size: 14px;
+  color: rgb(41, 41, 41);
+}
+.services .card .card-body {
+  text-align: center;
+}
+/* Section Services End */
+
+/* Section Gallery Start */
+.gallery {
+  margin-top: 50px;
+}
+.gallery .card {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  cursor: pointer;
+}
+.gallery .card img {
+  border-radius: 10px;
+  height: 250px;
+  transition: 0.5s;
+}
+.gallery .card img:hover {
+  transform: scale(1.1);
+}
+/* Section Gallery End */
+
+/* Section About Start */
+.about {
+  padding: 50px;
+  background: #f9f9f9;
+}
+.about .card {
+  border-radius: 10px;
+}
+.about .card img {
+  border-radius: 10px;
+}
+.about h2 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.about p {
+  font-weight: 500;
+}
+#about-btn {
+  width: 150px;
+  height: 38px;
+  border: none;
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+#about-btn:hover {
+  color: crimson;
+  background-color: transparent;
+  border: 1.6px solid crimson;
+}
+@media (max-width:765px) {
+    .about{
+        padding:0;
+    }
+}
+/* Section About End */
+
+/* Footer Section Start */
+#footer{
+    width: 100%;
+    /* margin-top: 20px; */
+    text-align: center;
+    background-color: #f9f9f9;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: crimson;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+}
+.social-links i:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.credit p a{
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+
+/* Footer Section End */
